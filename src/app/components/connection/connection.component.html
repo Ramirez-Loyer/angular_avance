@@ -1,0 +1,22 @@
+<div class="container" [formGroup] = "form">
+    <div class="col-md-3">
+        <h1>Login</h1>
+       
+            
+            <div class="form-group">
+                <label class="control-label">Email : </label>
+                <input type="text" placeholder="email" formControlName="email" class="form-control">
+            </div>
+             
+            <div class="form-group">
+                 <label class="control-label">Password : </label>
+                <input type="text" placeholder="password" formControlName="password" class="form-control">
+            </div>
+    
+            <button (click)="login()">Login</button>
+        
+    </div>
+</div>
+
+
+
