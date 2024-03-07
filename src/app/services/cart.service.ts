@@ -36,6 +36,7 @@ export class CartService {
    * @param customer 
    */
   saveCustomer(customer : Customer) {
+    console.log(customer);
     localStorage.setItem('customer',JSON.stringify(customer));
   }
 

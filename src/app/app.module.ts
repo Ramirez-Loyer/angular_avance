@@ -30,6 +30,7 @@ import { AdminComponent } from './components/admin/admin.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [],
