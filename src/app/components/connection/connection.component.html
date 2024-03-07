@@ -1,5 +1,5 @@
-<div class="container" [formGroup] = "form">
-    <div class="col-md-3">
+<div class="container  mt-4" [formGroup] = "form">
+    <div class="col-md-8">
         <h1>Login</h1>
        
             
@@ -13,7 +13,10 @@
                 <input type="text" placeholder="password" formControlName="password" class="form-control">
             </div>
     
+          
             <button (click)="login()">Login</button>
+            <!--{{form.value | json}}-->
+        
         
     </div>
 </div>

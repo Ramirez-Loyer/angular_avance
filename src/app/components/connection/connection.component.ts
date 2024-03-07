@@ -10,13 +10,12 @@ import { AuthenticateService } from 'src/app/services/authenticate.service';
 })
 export class ConnectionComponent implements OnInit {
 
-
-  form : FormGroup = this.fb.group({
+  form : FormGroup = this.formBuilder.group({
       email: ['', Validators.required],
       password : ['', Validators.required],
     });
     
-    constructor(public authService : AuthenticateService, private fb : FormBuilder, router : Router) {  
+    constructor(public authService : AuthenticateService, private formBuilder : FormBuilder, router : Router) {  
     
     }
 

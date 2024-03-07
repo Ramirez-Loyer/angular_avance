@@ -24,7 +24,7 @@ session: any;
       (u) => u.username === email && u.password === password);
       if (user) {
         this.session = user;
-        //localStorage.setItem('session', JSON.stringify(this.session));
+        //bd.json.setItem('session', JSON.stringify(this.session));
       }
     return user;
   }

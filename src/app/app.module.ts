@@ -26,8 +26,8 @@ import { ConnectionComponent } from './components/connection/connection.componen
     OrderComponent,
     AdminComponent,
     ConnectionComponent
- 
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
