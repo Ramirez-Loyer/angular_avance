@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TrainingsComponent } from './components/trainings/trainings.component';
@@ -27,7 +26,6 @@ import { ConnectionComponent } from './components/connection/connection.componen
     OrderComponent,
     AdminComponent,
     ConnectionComponent,
-
   ],
   
   imports: [

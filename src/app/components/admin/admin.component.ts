@@ -4,6 +4,8 @@ import { Training } from 'src/app/model/training.model';
 import { Router } from '@angular/router';
 import { ApiServiceService } from 'src/app/services/api-service.service';
 import { CartService } from 'src/app/services/cart.service';
+import { TrainingsComponent } from '../trainings/trainings.component';
+
 
 @Component({
   selector: 'app-admin',
@@ -22,6 +24,9 @@ export class AdminComponent implements OnInit {
    this.getAllTrainings();
  }
 
+
+ /*selectedTraining : Training = new Training(); */
+
  //Méthode pour exploiter notre api dans l'app
  getAllTrainings(){
   this.apiService.getTrainings().subscribe({
@@ -31,8 +36,10 @@ export class AdminComponent implements OnInit {
   });
 }
 
+
+
 deleteTraining( ) {
   };
 
-  
+
 }
