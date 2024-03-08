@@ -7,7 +7,7 @@ import { CustomerComponent } from './components/customer/customer.component';
 import { OrderComponent } from './components/order/order.component';
 import { ConnectionComponent } from './components/connection/connection.component';
 import { AdminComponent } from './components/admin/admin.component';
-import { UserComponent } from './components/user/user.component';
+
 
 
 
@@ -17,8 +17,7 @@ const routes: Routes = [
     { path : 'order' , component : OrderComponent},
     { path : 'customer' , component : CustomerComponent},
     { path : 'connection', component : ConnectionComponent},
-    { path : 'connection', component : AdminComponent},
-    { path : 'connection', component : UserComponent},
+    { path : 'admin', component : AdminComponent},
     { path : '' , redirectTo : 'trainings', pathMatch : 'full' },
     { path : '404', component: NotFoundComponent},
     { path : '**', redirectTo: '/404'},

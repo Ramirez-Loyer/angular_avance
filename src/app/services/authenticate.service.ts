@@ -28,8 +28,12 @@ session: any;
       if (user) {
         this.session = user;
         localStorage.setItem('session', JSON.stringify(this.session));
-      } 
-    return user;
+      
+    return true;
+  } else {
+    return false;
+  }
+    
   
   }
 }
