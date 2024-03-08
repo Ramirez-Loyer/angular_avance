@@ -12,6 +12,7 @@ import { OrderComponent } from './components/order/order.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AdminComponent } from './components/admin/admin.component';
 import { ConnectionComponent } from './components/connection/connection.component';
+import { UserComponent } from './components/user/user.component';
 
 
 
@@ -25,7 +26,8 @@ import { ConnectionComponent } from './components/connection/connection.componen
     CustomerComponent,
     OrderComponent,
     AdminComponent,
-    ConnectionComponent
+    ConnectionComponent,
+    UserComponent
   ],
   
   imports: [

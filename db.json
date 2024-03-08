@@ -30,29 +30,18 @@
     },
     {
       "id": 5,
+      "name": "Java Avance",
+      "description": "Prise en main 2 jours",
+      "price": 5000,
+      "quantity": 1
+    },
+    {
+      "id": 6,
       "name": "NodelJs",
       "description": "Prise en main de NodelJs/Express 2 jours",
       "price": 1400,
       "quantity": 1
-    },
-    {
-      "id": 6
-    },
-    {
-      "id": 7
-    },
-    {
-      "id": 8
-    },
-    {
-      "id": 9
-    },
-    {
-      "id": 10,
-      "name": "PowerBi",
-      "description": "Business Intelligence 10 jours",
-      "price": 3000,
-      "quantity": 1
     }
+  
   ]
 }

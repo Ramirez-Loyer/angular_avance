@@ -4,28 +4,32 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class AuthenticateService {
-users: any[] = [
+
+  private users: any[] = [
   {
     id : 1, 
-    email : 'monmail@mail.com',
-    password: 123456,
+    email : 'alex@mail.com',
+    password: '1234',
+    roles: ['ADMIN', 'USER']
   }, 
   {
     id : 1, 
-    email : 'unautremail@mail.com',
-    password: 123456,
+    email : 'coco@mail.com',
+    password: '1234',
+    roles: ['USER']
   }
 ];
 session: any;
   constructor() { }
 
-  login(email: string, password: number) {
+  onLogin(email: string, password: number, roles: string) {
     let user = this.users.find(
-      (u) => u.username === email && u.password === password);
+      (u) => u.email=== email && u.password === password);
       if (user) {
         this.session = user;
-        //bd.json.setItem('session', JSON.stringify(this.session));
-      }
+        localStorage.setItem('session', JSON.stringify(this.session));
+      } 
     return user;
+  
   }
 }
