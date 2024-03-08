@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Route } from '@angular/router';
+import { Training } from 'src/app/model/training.model'; 
+import { Router } from '@angular/router';
+import { ApiServiceService } from 'src/app/services/api-service.service';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-admin',
@@ -8,9 +12,27 @@ import { Route } from '@angular/router';
 })
 export class AdminComponent implements OnInit {
 
-  constructor() { }
+  listTrainings : Training[] | undefined;  
+  error: any;
 
-  ngOnInit(): void {
+  constructor(private cartService : CartService, private router : Router, private apiService: ApiServiceService) {
   }
 
+ ngOnInit(): void {        
+   this.getAllTrainings();
+ }
+
+ //Méthode pour exploiter notre api dans l'app
+ getAllTrainings(){
+  this.apiService.getTrainings().subscribe({
+    next : (data) => this.listTrainings= data, 
+    error : (err) => this.error = err.message, 
+    complete : () => this.error = null
+  });
+}
+
+deleteTraining( ) {
+  };
+
+  
 }
