@@ -27,7 +27,7 @@ export class AdminComponent implements OnInit {
 
  /*selectedTraining : Training = new Training(); */
 
- //Méthode pour exploiter notre api dans l'app
+ //Méthode pour exploiter l'api dans l'app
  getAllTrainings(){
   this.apiService.getTrainings().subscribe({
     next : (data) => this.listTrainings= data, 
@@ -36,10 +36,12 @@ export class AdminComponent implements OnInit {
   });
 }
 
-
-
-deleteTraining( ) {
-  };
-
+addOrEdit(){
 
 }
+
+  
+}
+
+
+
