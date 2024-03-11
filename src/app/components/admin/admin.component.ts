@@ -36,9 +36,7 @@ export class AdminComponent implements OnInit {
   });
 }
 
-addOrEdit(){
 
-}
 
   
 }

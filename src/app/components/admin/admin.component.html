@@ -1,5 +1,6 @@
 <nav class="navbar navbar-dark bg-primary">
     <a class="navbar-brand=">Admin</a>
+    <a class="btn btn-danger">Se deconnecter</a>
 </nav>
 
 <div class="container mt-4">
@@ -18,9 +19,9 @@
                         <td>{{training.description}}</td>
                         <td>{{training.price}}</td>
                         <td> <a class="btn btn-primary">Modifier</a></td>
-                            <!--<td> <a class="btn btn-primary" (click)="ModifierTraining(training)"> Modifier</a></td>-->
+                            <!--(click)="ModifyTraining(training)"> Modifier</a></td>-->
                         <td> <a class="btn btn-danger"> Supprimer</a></td>
-                            <!--<td> <a class="btn btn-primary" (click)="deleteTraining(training)"> Supprimer </a></td>-->
+                            <!--(click)="deleteTraining(training)"> Supprimer </a></td>-->
                     </tr>
                  </tbody>
             </table>  
@@ -34,8 +35,13 @@
                     </div>
                         <div class="form-group">
                             <br>
-                            <input type="text" placeholder="Insérer une formation" class="form-control">
-                           <!-- <input type="text" [(ngModel)]="selectedTraining.name" placeholder="Insérer une formation" class="form-control"-->
+                            Nom de la formation <input type="text"  class="form-control">
+                           
+                           Description <input type="text"  class="form-control">
+                           Prix <input type="text" class="form-control">
+                           <br>
+                           <td> <a class="btn btn-primary">Ajouter</a></td>
+                           <!--(click)="AddTraining(training)"> Ajouter</a></td>-->
                         </div>
                 </div>
             </div>
